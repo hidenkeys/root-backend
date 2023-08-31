@@ -28,7 +28,7 @@ exports.register = async (req, res, next) => {
       const hashedPassword = await bcrypt.hash(password, salt);
       password = hashedPassword;
       confirmPassword = 'xxxxxxxxx';
-      role = 1
+      role = 0
   
       let registeredUser ='';
       // Create a new user instance
